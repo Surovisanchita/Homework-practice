@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 30px 0;
+    background: darkcyan;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: .4s;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: tomato;
+
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+
+.menu ul li a::after{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    content: "";
+    transition: .8s;
+
+}
+.menu ul li a::before{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    content: "";
+    transition: .8s;
+}
+.menu ul li a:hover::before{
+    width: 100%;
+}
+
+.photos{
+    background: url(../images/pexels-padrinan-255377.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overly{
+    color: rgba(0, 0, 0, 0.6);
+    padding: 250px 0;
+}
